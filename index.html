@@ -7,6 +7,12 @@
 
 
 <body>
+	<script>
+		function validateForm() {
+			alert("Me comunicaré contigo pronto.");
+		}
+	</script>
+	
 
 
 	<nav>
@@ -103,12 +109,14 @@
 	<div class="divshadow"></div>
 	<div class="divshadow"></div>
 
+	
+
 	<div class=" center footer" id="contactame">
 		<br>
 		<a href="mailto:retejada@alu.ucam.edu?subject=Estoy interesado en: ">
 			<h2>Contactame</h2>
 		</a>
-		<form class="width100" action="https://www.linkedin.com/in/ronaldris21/"> 
+		<form name="myform" class="width100" onsubmit="return validateForm()"> 
 			<table class="width100 lefttextalighn" >
 				<tr>
 					<th><label>Motivo</label></th>
@@ -131,7 +139,7 @@
 				
 				<tr>
 					<th><label>Correo</label></th>
-					<th><input class="width100 margin5" type="email"><br></th>
+					<th><input name="femail" class="width100 margin5" type="email"><br></th>
 				</tr>
 				<tr>
 					<th><label for="">Detalles</label></th>
